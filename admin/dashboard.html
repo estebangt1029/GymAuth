@@ -85,6 +85,12 @@ body{
         <span>Retención</span>
     </div>
 </div>
+<script>
+if (!localStorage.getItem("session") || localStorage.getItem("role") !== "admin") {
+  window.location.href = "../auth/login.html";
+}
+</script>
 
 </body>
 </html>
+
