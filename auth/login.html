@@ -97,10 +97,7 @@ function login() {
   console.log("DATA:", data);
 
   if (data.success) {
-    // Guardar sesión
-    localStorage.setItem("session", "ok");
-    localStorage.setItem("role", data.role);
-    localStorage.setItem("email", data.email);
+   
 
     if (data.role === "admin") {
       window.location.href = "admin/dashboard.html";
@@ -121,6 +118,7 @@ function login() {
 
 </body>
 </html>
+
 
 
 
