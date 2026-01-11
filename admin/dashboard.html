@@ -63,7 +63,7 @@ body{
         <a href="/admin/stats.html">Estadísticas</a>
         <a href="/admin/automations.html">Automatizaciones</a>
         <a href="/admin/settings.html">Configuración</a>
-        <button onclick="logout()">Cerrar sesión</button>
+        <a href="auth/login.html">Salir</a>
     </div>
 </div>
 
@@ -90,13 +90,10 @@ if (!localStorage.getItem("session") || localStorage.getItem("role") !== "admin"
   window.location.href = "../auth/login.html";
 }
 
-    function logout() {
-  localStorage.clear();
-  window.location.href = "auth/login.html";
-}
 </script>
 
 </body>
 </html>
+
 
 
