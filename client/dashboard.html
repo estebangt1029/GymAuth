@@ -81,5 +81,12 @@ body{
     </div>
 </div>
 
+    <script>
+if (!localStorage.getItem("session") || localStorage.getItem("role") !== "client") {
+  window.location.href = "../auth/login.html";
+}
+</script>
+
 </body>
 </html>
+
